@@ -1,0 +1,26 @@
+$Beige: #F8F5F2;
+$Azul: #3a7999;
+$Size: 20px;
+$Font: 'Nunito',
+sans-serif;
+;
+
+body{
+    
+    padding: 0;
+    margin: 0;
+    font-family: $Font;
+
+    button {
+        border: none;
+        background: $Azul;
+        color: $Beige;
+        padding: 10px;
+        font-size: $Size;
+        border-radius: 5px;
+        position: relative;
+        box-sizing: border-box;
+        transition: all 500ms ease;
+        }
+
+}
