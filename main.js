@@ -1,13 +1,13 @@
-
-
 const express = require('express');
+const hbs = require('express-handlebars');
 const app = express();
 
 //<------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-app.set('views', 'views/');
-app.set('view engine', 'hbs');
-app.use("/static", express.static("public"))
+app.use(express.static('public'));
+app.engine('handlebars', hbs());
+app.set('view engine', 'handlebars');
+
 
 //<------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
